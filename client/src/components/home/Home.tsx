@@ -2,12 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { 
   DocumentTextIcon, 
-  UserGroupIcon, 
-  ChartBarIcon, 
+  UserGroupIcon,   ChartBarIcon, 
   BriefcaseIcon,
   ArrowRightIcon,
   CheckCircleIcon,
-  StarIcon,
   EnvelopeIcon,
   PhoneIcon,
   ExclamationTriangleIcon,
