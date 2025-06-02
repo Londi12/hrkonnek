@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import type { Candidate, Document } from '../../types';
+import { candidatesApi } from '../../utils/api';rt React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+import type { Candidate, Document } from '../../types';
 import { candidatesApi } from '../../utils/api';
 
 export const CandidateDetails: React.FC = () => {
