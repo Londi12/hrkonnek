@@ -1,6 +1,9 @@
 import React, { useState, useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
 import { documentsApi } from '../../utils/api';
+import type { Document } from '../../types';rt React, { useState, useCallback } from 'react';
+import { useDropzone } from 'react-dropzone';
+import { documentsApi } from '../../utils/api';
 import type { Document } from '../../types';
 
 interface DocumentUploadProps {
