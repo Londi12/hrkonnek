@@ -7,6 +7,9 @@ import './App.css'
 // Layout Components
 import Header from './components/layout/Header'
 
+// Page Components
+import { Home } from './components/home/Home'
+
 // Auth Components
 import Login from './components/auth/Login'
 import Register from './components/auth/Register'
@@ -29,7 +32,7 @@ function App() {
       <Router>
         <div className="min-h-screen bg-gray-50">
           <Header user={user} setUser={setUser} />
-          <main className="container mx-auto px-4 py-8">
+          <main className="flex-grow">
             <Routes>
               {/* Public Routes */}
               <Route path="/login" element={<Login setUser={setUser} />} />
@@ -62,7 +65,7 @@ function App() {
               />
               
               {/* Default Route */}
-              <Route path="/" element={<Navigate to={user ? '/profile' : '/login'} />} />
+              <Route path="/" element={user ? <Navigate to="/profile" /> : <Home />} />
             </Routes>
           </main>
         </div>
