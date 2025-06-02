@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { candidatesApi } from '../../utils/api';
-import { Candidate } from '../../types';
+import type { Candidate } from '../../types';
 
 export const CandidateList: React.FC = () => {
   const [candidates, setCandidates] = useState<Candidate[]>([]);

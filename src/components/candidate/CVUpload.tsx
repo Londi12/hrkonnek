@@ -4,11 +4,7 @@ import axios from 'axios';
 import { toast } from 'react-hot-toast';
 import { DocumentArrowUpIcon } from '@heroicons/react/24/outline';
 
-interface CVUploadProps {
-  user: any;
-}
-
-export default function CVUpload({ user }: CVUploadProps) {
+export default function CVUpload() {
   const navigate = useNavigate();
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [loading, setLoading] = useState(false);

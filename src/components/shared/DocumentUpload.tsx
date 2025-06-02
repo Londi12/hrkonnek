@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react';
 import { useDropzone } from 'react-dropzone';
 import { documentsApi } from '../../utils/api';
-import { Document } from '../../types';
+import type { Document } from '../../types';
 
 interface DocumentUploadProps {
   onUploadSuccess?: (document: Document) => void;

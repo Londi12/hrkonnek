@@ -3,11 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { toast } from 'react-hot-toast';
 
-interface ProfileProps {
-  user: any;
-}
-
-export default function Profile({ user }: ProfileProps) {
+export default function Profile() {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
   const [profile, setProfile] = useState({

@@ -14,7 +14,7 @@ import Register from './components/auth/Register'
 // Candidate Components
 import CandidateProfile from './components/candidate/Profile'
 import CVUpload from './components/candidate/CVUpload'
-import DocumentUpload from './components/candidate/DocumentUpload'
+import { DocumentUpload } from './components/shared/DocumentUpload'
 
 // Admin Components
 import { AdminDashboard } from './components/admin/AdminDashboard'
@@ -38,15 +38,15 @@ function App() {
               {/* Candidate Routes */}
               <Route 
                 path="/profile" 
-                element={user ? <CandidateProfile user={user} /> : <Navigate to="/login" />} 
+                element={user ? <CandidateProfile /> : <Navigate to="/login" />} 
               />
               <Route 
                 path="/upload-cv" 
-                element={user ? <CVUpload user={user} /> : <Navigate to="/login" />} 
+                element={user ? <CVUpload /> : <Navigate to="/login" />} 
               />
               <Route 
                 path="/upload-documents" 
-                element={user ? <DocumentUpload user={user} /> : <Navigate to="/login" />}
+                element={user ? <DocumentUpload /> : <Navigate to="/login" />}
               />
 
               {/* Admin Routes */}
